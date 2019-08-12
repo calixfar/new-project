@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/data.js/schema.js"],"names":["typeDefs"],"mappings":";;;;;;;AAAA;;AAEA,IAAMA,QAAQ,GAAG,iCAAa,wBAAb,CAAjB","sourcesContent":["import {importSchema} from 'graphql-import'\r\n\r\nconst typeDefs = importSchema('data.js/schema.graphql');\r\n\r\nexport {typeDefs}"],"file":"schema.js"}
