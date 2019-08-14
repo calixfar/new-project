@@ -32,4 +32,6 @@ const server = new ApolloServer({
 
 server.applyMiddleware({app})
 
-app.listen({port: process.env.PORT || 4000}, () => console.log(`Servidor corriendo en http://localhost:${process.env.PORT}${server.graphqlPath}`))
+const port = process.env.PORT || 4000;
+const host = process.env.HOST || '0.0.0.0';
+app.listen(port, host, () => console.log(`Servidor corriendo en ${process.env.PORT}${server.graphqlPath}`))
