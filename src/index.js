@@ -34,4 +34,5 @@ server.applyMiddleware({app})
 
 const port = process.env.PORT || 4000;
 const host = process.env.HOST || '0.0.0.0';
-app.listen(port, host, () => console.log(`Servidor corriendo en ${process.env.PORT}${server.graphqlPath}`))
+app.listen(port, host)
+.then({url}, () => console.log(`${url}:${port}${server.graphqlPath}`))
