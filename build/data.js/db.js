@@ -15,7 +15,7 @@ _dotenv["default"].config({
   path: 'variables.env'
 });
 
-_mongoose["default"].Promise = global.Promise;
+_mongoose["default"].Promise = global.Promise; //mongodb://localhost:27017/electoral
 
 function conectar() {
   //mongoose.connect('mongodb+srv://user-1:MO.ngodb161@cluster0-dgiyl.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true})
